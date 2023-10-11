@@ -3,6 +3,7 @@ body{
   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   font-size: 14px;
   font-weight: 500;
+  margin:0 0 0 0;
 }
 
 .Header{
@@ -130,6 +131,12 @@ body{
   display:block;
 }
 
+@media screen and (max-width:1080px){
+  .HeaderNavListItem{
+    margin-right:0;
+  }
+}
+
 .Nav1{
   display:block;
   font-weight: 700;
@@ -144,6 +151,7 @@ body{
   margin-top:0;
   text-align: center;
 }
+
 .NavButton{
   align-items: center;
   background-color: #f79214;
@@ -163,6 +171,16 @@ body{
   font-size: 12px;
   height: 40px;
   padding: 0 20px;
+}
+
+.NavButton:visited{
+  color:#fff;
+}
+
+@media screen and (min-width:768px){
+  .NavButton:hover{
+    opacity:.8;
+  }
 }
 
 .FirstView{
@@ -313,6 +331,16 @@ body{
   text-decoration: none;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width:768px){
+  .ContentButton:hover{
+    opacity:.8;
+  }
+}
+
+.ContentButton:visited{
+  color:#fff;
 }
 
 .ContentCaption{
